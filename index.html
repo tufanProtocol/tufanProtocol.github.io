@@ -1,153 +1,288 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-
-<html>
-
-
-<!---->
-<head><title>
-
-</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<style>
-  #top-menu{
-    height: 154px;
-  }
-#top-menu-right{
-   
-   width: 100%;
-
-}
-#top-menu-left{
-    width:300px;
-    float:left;
-  
-}
-#content{
-height: 600px;
-background-image: url('data/man-walking-2.png');
-}
-#left-content{
-  width: 50%;
-float:left;
-}
-#right-content{
-  width:100%;
-
-}
-
-
-
-</style>
-
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tufan| Smart Expense Manager</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <div id="top-menu">
-        <div id="top-menu-left">
-
-<img src="logo.png" alt="Logo ">
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <div id="top-menu-right">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <ul class="navbar-nav">
-          <li class="nav-item active"><b>
-            <a class="nav-link" href="#">Home</a></b>
-          </li>
-          <li class="nav-item">
-              <b>
-            <a class="nav-link" href="#features">Features</a></b>
-          </li>
-          <li class="nav-item"><b>
-            <a class="nav-link" href="#team">Team</a></b>
-          </li>
-          <li class="nav-item"><b>
-            <a class="nav-link" href="#testinomials">Testinomials</a></b>
-          </li>
-          <li class="nav-item"><b>
-            <a class="nav-link" href="#contactUs">Contact Us</a></b>
-          </li>
-          
-          
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Features</a>
+            </li>
+            <li>
+                <a href="#education">Team</a>
+            </li>
+            <li>
+                <a href="#projects">Testinomials</a>
+            </li>
+            <li>
+                <a href="#skills">Blog</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
         </ul>
-      </nav>
-      </div>
-    </div><br>
+    </header>
+    <!-- End header -->
 
-    <div id="content">
-      
-      <div id="left-content">
+    <div id="lead">
+        <div id="lead-content">
+            <h1>MoneyBuddy</h1>
+            <h2>Organize your Invoices/Bills</h2>
+           
+           <!-- <a href="#" class="btn-rounded-white">Download Resume</a>
+           -->
+            <img src="images/android.svg" height="51px" width="161px">
+            <img src="images/appStore.svg" height="51px" width="161px">
+        </div>
+        <!-- End #lead-content -->
 
-        <img src="data/android.svg">
+        <div id="lead-overlay"></div>
 
-        <img src="data/appStore.svg">
-      </div>
-      <div id="right-content"></div>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
     </div>
+    <!-- End #lead -->
 
-    <div id="features">
-      
-   
-<h2 style="text-align: center;">Features</h2>
-  <ul>
-  <li>Unlimited Invoices and Bills
-  <ul>
-  <li>Add all your expenses, no limit on number of invoices/ bills.</li>
-  </ul></li>
-  <li><p>Multilingual Support</p>
-  <ul>
-  <li>Provide support major languages. We can understand that not knowing english can't stop you to organize Invoices and Bills.</li>
-  </ul></li>
-  <li><p>Reports and Account Statement</p>
-  <ul>
-  <li>Download Reports and Statements, any time, any where and on any device.</li>
-  </ul></li>
-  <li><p>Track How you spend</p>
-  <ul>
-  <li>Using Tufan platform, you can track how you spend your money.</li>
-  </ul></li>
-  <li><p>100% Safe and Secure</p>
-  <ul>
-  <li>Your data is safe with us. We assure your privacy.</li>
-  </ul></li>
-  <li>Cloud based Platform
-  <ul>
-  <li>Tufan is Cloud based platform, You can access to your Invoices/Bills from anywhere, anytime and any devices. Multiplatform support. User can accesss platform by using iOS, Android Device and web Application.</li>
-  </ul></li>
-  </ul>
-   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Us</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        MoneyBuddy is cloud based platform for organising Invoices/Bills. User can also track how they spend.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- End #about -->
 
-<div id=="team">
-  <div id="team-top-text" style="text-align: center;"><h1>Meet the Team</h1></div>
-  
-</div>
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Features</h2>
+        <div id="experience-timeline">
+            <div data-date="Anywhere, Anytime, Any device">
+                <h3>Power by Cloud</h3>
+                <h4></h4>
+                <p>
+                MoneyBuddy is powered by Cloud. You can access all your Invoices/Bills from anywhere, anytime and on any device. User can access our platform using android or iOS application.</p>
+            </div>
 
-<br>
-<div id="problems">
-  <h1 style="text-align: center;">Problems in current Eco-system</h1></li>
-</ol>
-<ul>
-<li><p>Currently we have to store all invoices and bills. We have to store physical copy of invoices and bills. Storing hard copy is boring and time consuming and also required resources.</p></li>
-<li>Sometimes we lost invoices/bills</li>
-<li>Invoices/Bills are not organised.</li>
-<li><p>No analytics, how you spend or invest your money.</p></li>
-<li><p>At the end of financial year, we have to submit all invoices/bills to our accountant for compiling our statements. At that time finding all invoices and bills is very boring and time consuming process.</p></li>
-<li><p>Invoices and Bills are from different media files. We often get invoices and bills in different media files. From brick and mortar store, we get hard copy. From some online purchase, we get pdf file. Store like brand-factory, send us an message for invoices link.</p></li>
-</ul>
-</div>
-<div id="testinomials">
-  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis vero distinctio at reprehenderit est similique atque saepe, modi tempore molestias eum? Quasi rerum dolorum exercitationem labore, suscipit quod dicta?</h2>
-</div>
+            <div data-date="Track how you spend">
+                <h3>Track how you spend</h3>
+                <h4></h4>
+                <p>
+                       Using MoneyBuddy platform, you can track how you spend your money. Download Reports and Statements according your requirement.
+                </p>
+            </div>
+
+            <div data-date="">
+                <h3>Multilingual Support</h3>
+                <h4></h4>
+                <p>
+                     Support major languages. We can understand that not knowing english can't stop you to manage Invoices and Bills. </p>
+            </div>
+          
+            <div data-date="">
+                <h3>100% Safe and Secure</h3>
+                <h4></h4>
+                <p>
+                    Your data is safe with us. We assure your privacy.
+                </p>
+            </div>
+            <div data-date="">
+                <h3>Effortless Expense Management</h3>
+                <h4></h4>
+                <p>
+                    Using our AI enabled platform, you can plan your future financial planning and manage your expense. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Team</h2>
+        <div class="education-block">
+            <div class="team-block">
+            <div class="team-left"><img src="images/testinomial1.jpg"></div>
+
+            <div class="team-right">
+                <h3>Shreeshiv Patel</h3>
+                <h4>Founder, CEO, CTO, CFO, COO, sweeper</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt atque neque nemo animi tempore quidem velit ipsa voluptatem voluptas, facilis excepturi recusandae nihil amet sunt iste iure, itaque doloribus.</p>
+           </div>
+            </div>
+            </div>
+
+            <div class="education-block">
+                <div class="team-block">
+                <div class="team-left"><img src="images/testinomial1.jpg"></div>
+    
+                <div class="team-right">
+                    <h3>Uvil Naik</h3>
+                    <h4>Senior Web Developer</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt atque neque nemo animi tempore quidem velit ipsa voluptatem voluptas, facilis excepturi recusandae nihil amet sunt iste iure, itaque doloribus.</p>
+               </div>
+                </div>
+                </div>
+                <div class="education-block">
+                    <div class="team-block">
+                    <div class="team-left"><img src="images/testinomial1.jpg"></div>
+        
+                    <div class="team-right">
+                        <h3>Dhyey Mehta</h3>
+                        <h4>Senior Security and Network Head</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt atque neque nemo animi tempore quidem velit ipsa voluptatem voluptas, facilis excepturi recusandae nihil amet sunt iste iure, itaque doloribus.</p>
+                   </div>
+                    </div>
+                    </div>
+      
+        <!--        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+        </div>
+    -->
+        
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Testinomials</h2>
+        <div class="container">
+            <div class="row">
 
 
-<div id="contactUs"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, perspiciatis. Veniam optio impedit, porro odit laborum fugiat nesciunt id qui labore quos, accusantium amet, harum reprehenderit? Ex odit omnis sint?</h2>
-</div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/testinomial1.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info"><h3>Ankit Makwana</h3>
+                        <p style="text-align: justify;">
+                            I have been usig this application. This application is really awesome. Previously I used to store all Invoices/Bills. At the end of financial year, I have to find all I/B. Finding all I/B was very complex and time consuming process. This platform helps to store Invoices/Bills. I can also track how I am speding my money.
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/testinomial1.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Brijesh Shah</h3>
+                        <p style="text-align: justify;">
+                            I have been usig this application. This application is really awesome. Previously I used to store all Invoices/Bills. At the end of financial year, I have to find all I/B. Finding all I/B was very complex and time consuming process. This platform helps to store Invoices/Bills. I can also track how I am speding my money.
+                        </p>
+                       
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Blog</h2>
+        <ul>
+            <li><a href="">First Humble start to do something AWESOME.</a></li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="mailto:tufanprotocol@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2020 Tufan Protocol
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/tufanProtocol" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
